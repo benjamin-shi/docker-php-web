@@ -7,7 +7,8 @@ RUN apt update \
     && docker-php-ext-install mysqli && docker-php-ext-enable mysqli \
     && apt install -y libpng-dev libjpeg-dev libfreetype*-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd && docker-php-ext-enable gd
+    && docker-php-ext-install gd && docker-php-ext-enable gd \
+    && a2enmod rewrite
     
 EXPOSE 80/tcp
 EXPOSE 443/tcp

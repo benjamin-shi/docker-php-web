@@ -19,7 +19,7 @@ jobs:
           docker build . --file Dockerfile --tag php-web
           docker login --username benjaminshi --password Aa%123qweasd
           docker image tag php-web benjaminshi/php-web:latest
-          docker image tag php-web benjaminshi/php-web:v1.0.$(data +%s)
-          docker image tag php-web benjaminshi/php-web:v1.0
+          docker image tag php-web benjaminshi/php-web:v1.1.$(data +%s)
+          docker image tag php-web benjaminshi/php-web:v1.1
           docker image push --all-tags benjaminshi/php-web
           
