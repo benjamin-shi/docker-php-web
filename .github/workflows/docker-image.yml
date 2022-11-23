@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  version: v1.1
+  version: v1.2
   tag: php-web
 jobs:
 
